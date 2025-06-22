@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Just a Peaceful Website</title>
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+  </style>
+</head>
+<body>
+  <audio autoplay loop>
+    <source src="7d9b20ad98cb533a12ffd129e4de9cfe.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  <script>
+    // Автоматическое воспроизведение (для мобильных браузеров могут быть ограничения)
+    const audio = document.querySelector('audio');
+    window.addEventListener('click', () => audio.play()); // на случай, если нужен пользовательский жест
+  </script>
+</body>
+</html>
